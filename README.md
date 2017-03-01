@@ -1,9 +1,9 @@
-# thedavidpham
-UX Portfolio
+# thedavidpham (new UX Portfolio site)
 
-Took me a week to work on this new portfolio website.
 
-Lots of challengs along the way:
+## CHALLENGES
+
+Took me a week to work on this new portfolio website. Lots of challengs along the way:
 * npm serve was out of date, had to update it ... but in turn found out my Homebrew was out of date
 * ended up removing homebrew because I didn't like the dependence NodeJS had on it
 * Using FTP I got my files hosted ... but nothing got published. Support agent said he had to change the name server to get it working
