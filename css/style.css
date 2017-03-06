@@ -178,7 +178,7 @@ header[role="header"] nav #menu-button {width: 31px;font-size: 0;float: right;he
 
 -webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .5s ease-in-out;-moz-transition: .5s ease-in-out;-o-transition: .5s ease-in-out;transition: .5s ease-in-out;cursor: pointer;}
 
-header[role="header"] nav #menu-button span {display: block;position: absolute;z-index: 60;height: 3px;
+/*header[role="header"] nav #menu-button span {display: block;position: absolute;z-index: 60;height: 3px;
 
 width: 100%;background: #111111;opacity: 1;left: 0;
 
@@ -202,7 +202,7 @@ header[role="header"] nav #menu-button.open span:nth-child(2) {opacity: 0;left: 
 
 header[role="header"] nav #menu-button.open span:nth-child(3) {top: 10px;
 
--webkit-transform: rotate(-135deg);-moz-transform: rotate(-135deg);-o-transform: rotate(-135deg);transform: rotate(-135deg);}
+-webkit-transform: rotate(-135deg);-moz-transform: rotate(-135deg);-o-transform: rotate(-135deg);transform: rotate(-135deg);}*/
 
 /*===== main ===*/
 
