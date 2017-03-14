@@ -1,4 +1,4 @@
-# thedavidpham (new UX Portfolio site)
+# http://thedavidpham.com (new UX Portfolio site)
 
 
 ## CHALLENGES
