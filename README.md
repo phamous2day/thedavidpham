@@ -17,4 +17,5 @@ Took me a week to work on this new portfolio website. Lots of challengs along th
     margin-top: 10%;
     margin-bottom: 2%;
 ```
-* Images on my home page are stretched in Safari browser ... turns out it's how Safari renders height. Changed my height values from 100% to "auto" accordingly to this [article](https://css-tricks.com/forums/topic/images-stretched-in-safari-and-chrome/)
+* Images on my home page are stretched in Safari browser ... turns out it's how Safari renders height. Removed height & min-height 6values for the "grid figure" and "grid figure img" in reference to this [article](https://css-tricks.com/forums/topic/images-stretched-in-safari-and-chrome/)
+
