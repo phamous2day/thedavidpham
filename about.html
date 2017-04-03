@@ -29,6 +29,13 @@
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+  <!-- Stop navbar fixed from covering header -->
+  <style media="screen">
+  body {padding-top: 60px;}
+  @media (max-width: 980px) {
+    body {padding-top: 50%;}}
+  </style>
+
   <!-- responsive -->
   <link href="css/responsive.css" rel="stylesheet" type="text/css">
 
@@ -53,7 +60,7 @@
 
 
 <!-- Navigation Menu -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
 
