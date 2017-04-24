@@ -22,3 +22,5 @@ Took me a week to work on this new portfolio website. Lots of challengs along th
   </style>
 ```
 * Images on my home page are stretched in Safari browser ... turns out it's how Safari renders height. Removed height & min-height 6values for the "grid figure" and "grid figure img" in reference to this [article](https://css-tricks.com/forums/topic/images-stretched-in-safari-and-chrome/)
+* Used Google's PageSpeed Insights to find ways to optimize website (minified my files and optimized images)
+* Used http://optimizilla.com/ to compress images
