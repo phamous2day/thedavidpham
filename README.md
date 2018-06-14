@@ -1,4 +1,4 @@
-# http://thedavidpham.com (new UX Portfolio site)
+# https://tinyurl.com/thedavidpham (new UX Portfolio site)
 
 
 ## CHALLENGES
