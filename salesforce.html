@@ -5,63 +5,66 @@
 <title>Salesforce products shipped</title>
 <link href=images/favicon.ico rel="shortcut icon" type=image/x-icon>
 <link href=css/bootstrap.min.css rel=stylesheet>
-<style>
-  * {
+<style media=screen>
+    body {
+        padding-top: 60px
+    }
+
+    @media (max-width:980px) {
+        body {
+            padding-top: 50%
+        }
+    }
+
+    iframe {
+        overflow: hidden
+    }
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-/* The grid: Four equal columns that floats next to each other */
-.column {
+.responsive {
+  padding: 0 6px;
   float: left;
-  width: 25%;
-  padding: 10px;
+  width: 24.99999%;
 }
 
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8; 
-  cursor: pointer; 
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
 }
 
-.column img:hover {
-  opacity: 1;
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
 }
 
-/* Clear floats after the columns */
-.row:after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
-}
-
-/* The expanding image container */
-.container {
-  position: relative;
-  display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-
-/* Closable button inside the expanded image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
 }
 </style>
 <link href=css/effects/set2.css rel=stylesheet>
@@ -84,38 +87,75 @@ body {
         </ul>
     </div>
 </nav>
+<div class=container>
+    <main class=container role=main-inner-wrapper>
+        <div class=work-details>
+            <div class=row>
+                <div class="col-sm-12 col-xs-12 col-md-4">
+                    <!-- <header role=work-title>
+                        <h2>Dive Log</h2><a href=https://phamous2day.github.io/UXcapstone/#/screens>Try it out <i aria-hidden=true class="fa fa-external-link"></i></a>
+                    </header> -->
+                </div>
+                    <div class="col-xs-12 col-sm-12 col-md-8">
 
-<body>
-<div style="text-align:center">
-</div>
+                        <section>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <!-- The four columns -->
-  <div class="row">
-    <div class="column">
-      <img src="images/salesforce/salesforce1.png" alt="Travel Salesrep Calendar" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images/salesforce/salesforce2.png" alt="ESRI Maps Integration" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images/salesforce/salesforce3.png"alt="Paste Postal Codes" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images/salesforce/salesforce4.png" alt="Maps Mobile onboard experience" style="width:100%" onclick="myFunction(this);">
-    </div>
+                            <h1>Shipped Projects Gallery</h1>
+                            
+                            <div class="responsive">
+                              <div class="gallery">
+                                <a target="_blank" href="images/salesforce/salesforce1.png">
+                                  <img src="images/salesforce/salesforce1.png" class="img-responsive" width="600" height="auto">
+                                </a>
+                                <div class="desc">Travel Rep Calendar</div>
+                              </div>
+                            </div>
+                            
+                            
+                            <div class="responsive">
+                              <div class="gallery">
+                                <a target="_blank" href="images/salesforce/salesforce2.png" >
+                                  <img src="images/salesforce/salesforce2.png" class="img-responsive" width="600" height="auto">
+                                </a>
+                                <div class="desc">ESRI Integration</div>
+                              </div>
+                            </div>
+                            
+                            <div class="responsive">
+                              <div class="gallery">
+                                <a target="_blank" href="images/salesforce/salesforce3.png" >
+                                  <img src="images/salesforce/salesforce3.png" class="img-responsive" width="600" height="auto">
+                                </a>
+                                <div class="desc">Paste Postal Codes</div>
+                              </div>
+                            </div>
+                            
+                            <div class="responsive">
+                              <div class="gallery">
+                                <a target="_blank" href="images/salesforce/salesforce4.png" >
+                                  <img src="images/salesforce/salesforce4.png" class="img-responsive" width="600" height="auto">
+                                </a>
+                                <div class="desc">Maps Mobile onboard experience</div>
+                              </div>
+                            </div>
 
-  </div>
+                            <!-- <div class="responsive">
+                                <div class="gallery">
+                                  <a target="_blank" href="images/salesforce/salesforce5.png">
+                                    <img src="images/salesforce/salesforce5.png" class="img-responsive" width="600" height="auto">
+                                  </a>
+                                  <div class="desc">Geolocation permission settings</div>
+                                </div>
+                              </div> -->
+                            
+                            <div class="clearfix"></div>
+                            
+                    </section>
+                </div>
+            </div>
+            <div class=clearfix></div>
   
-  <div class="container">
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-    <img id="expandedImg" style="width:100%">
-    <div id="imgtext"></div>
-  </div>
-
+        </div>
     </main>
     <footer role=footer>
         <ul role=social-icons>
@@ -126,15 +166,6 @@ body {
         </ul>
         <p class=copy-right>© 2018 David Pham
     </footer>
-    <script>
-      function myFunction(imgs) {
-        var expandImg = document.getElementById("expandedImg");
-        var imgText = document.getElementById("imgtext");
-        expandImg.src = imgs.src;
-        imgText.innerHTML = imgs.alt;
-        expandImg.parentElement.style.display = "block";
-      }
-      </script>
     <script src=js/jquery.min.js></script>
     <script src=js/nav.js></script>
     <script src=js/custom.js></script>
