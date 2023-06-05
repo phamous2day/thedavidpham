@@ -6,104 +6,109 @@
 <link href=images/favicon.ico rel="shortcut icon" type=image/x-icon>
 <link href=css/bootstrap.min.css rel=stylesheet>
 <style media=screen>
+  body {
+    padding-top: 60px
+  }
+
+  @media (max-width:980px) {
     body {
-        padding-top: 60px
+      padding-top: 50%
     }
+  }
 
-    @media (max-width:980px) {
-        body {
-            padding-top: 50%
-        }
-    }
-
-    iframe {
-        overflow: hidden
-    }
+  iframe {
+    overflow: hidden
+  }
 </style>
 <link href=css/effects/set2.css rel=stylesheet>
 <link href=css/effects/normalize.css rel=stylesheet>
 <link href=css/effects/component.css rel=stylesheet>
 <script>
-    ! function(e, a, t, n, g, c, o) {
-        e.GoogleAnalyticsObject = g, e.ga = e.ga || function() {
-            (e.ga.q = e.ga.q || []).push(arguments)
-        }, e.ga.l = 1 * new Date, c = a.createElement(t), o = a.getElementsByTagName(t)[0], c.async = 1, c.src = "https://www.google-analytics.com/analytics.js", o.parentNode.insertBefore(c, o)
-    }(window, document, "script", 0, "ga"), ga("create", "UA-93022791-1", "auto"), ga("send", "pageview")
+  ! function(e, a, t, n, g, c, o) {
+    e.GoogleAnalyticsObject = g, e.ga = e.ga || function() {
+      (e.ga.q = e.ga.q || []).push(arguments)
+    }, e.ga.l = 1 * new Date, c = a.createElement(t), o = a.getElementsByTagName(t)[0], c.async = 1, c.src = "https://www.google-analytics.com/analytics.js", o.parentNode.insertBefore(c, o)
+  }(window, document, "script", 0, "ga"), ga("create", "UA-93022791-1", "auto"), ga("send", "pageview")
 </script>
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class=container-fluid>
-        <div class=navbar-header><a href=index.html class="navbar-brand>img" title="David Pham"><img alt="David Pham" src=images/logo.png title="David Pham"></a></div>
-        <ul class="nav navbar-nav">
-            <li><a href=index.html>Portfolio</a>
-            <li><a href=about.html>About</a>
-            <li><a href=images/ResumeDAVIDPHAM.pdf>Resume</a>
-        </ul>
+  <div class=container-fluid>
+    <div class=navbar-header>
+      <a href=index.html class="navbar-brand>img" title="David Pham">
+        <img alt="David Pham" src=images/logo.png title="David Pham">
+      </a>
     </div>
+    <ul class="nav navbar-nav">
+      <li>
+        <a href=index.html>Portfolio</a>
+      <li>
+        <a href=about.html>About</a>
+      <li>
+        <a href=images/ResumeDAVIDPHAM.pdf>Resume</a>
+    </ul>
+  </div>
 </nav>
 <div class=container>
-    <main class=container role=main-inner-wrapper>
-        <div class=work-details>
-            <div class=row>
-                <div class="col-sm-12 col-xs-12 col-md-4">
-                    <!-- <header role=work-title>
-                        <h2>Dive Log</h2><a href=https://phamous2day.github.io/UXcapstone/#/screens>Try it out <i aria-hidden=true class="fa fa-external-link"></i></a>
-                    </header> -->
-                </div>
-                    <div class="col-xs-12 col-sm-12 col-md-8">
-
-                        <section>
-                            <h1>SALESFORCE INBOX</h1>
-                            <p>Salesforce Inbox is a suite of mobile and desktop productivity apps that bring email, calendar, and Salesforce integration together to help sales reps sell smarter.</p>
-                            <img width="560" height="315" src="images/salesforceinbox/salesforceinbox3.png" class="img-responsive" />
-                    
-                            <p>Salesforce Inbox aims to be an integral tool to increase the productivity and efficiency of its users. The Inbox mobile app surfaces relevant Salesforce information in your email, providing a level of context of your customer interactions. It also offers a collection of productivity tools that help take care of the daily busy work that sales reps encounter.</p>
-                    
-                            <h1>THE PROBLEM</h1>
-                            <p>There's a lot of scheduling inefficiencies with the current feature such as having to fill out too many fields before being able to select an empty time slot. How might we save time on scheduling meetings and increase engagement with making more meetings?</p>
-                            <img width="560" height="315" src="images/salesforceinbox/salesforceinbox.png" class="img-responsive" />
-
-                            
-                            <h1>RESEARCH</h1>
-                            <p>I started with questions to understand the problem. Made sure I knew things like scope, what other products would be affected by this new feature, the mechanics of how the feature will work, who are the stakeholders, who will be part of the team to deliver this, etc.</p>
-                            <p>Then, I did a heuristics analysis of issues with the current inbox and assessed how the new feature would fit in to solve for current missing abilities. Also did competitive analysis on how other competitors in the scheduling space handle scheduling meetings. For example, Calendly has a simplified flow to ask for availability using only 4 screens.</p>
-                            <p>There was a 3-week research sprint that kicked off 11+ user interviews with different internal departments such as account executives, support technicians, and documentation experts to help me extract insights about the feature. </p>
-
-                            
-                            <h1>DESIGN</h1>
-                            <p>We were on a very tight deadline and developers needed to start building soon. Our initial pondering asked if we should design mobile first. Or if we needed to separate our features into phases? Or what design language we had to comply with because this feature lived on multiple email clients like Outlook and Gmail. </p>
-
-<p> Once we answered the burning questions we dove into secondary research that involved usability tests with  focus groups. The focus groups consisted of solution engineers, success architects, and support agents, etc. I teamed people who don’t normally work together into breakout rooms to try different scenarios to stress-test my prototype. </p>
-
-<p> From the usability tests we learned learned a couple of insights that led to simplifying the scheduling experience. For example, people wanted less clutter and more ease of use by chunking together similar ideas. The biggest discovery was how buffer times were tied to event types instead of being separate … this way it’s less things to have to fill out each time. </p>
-                            <img width="560" height="315" src="images/salesforceinbox/salesforceinbox7.png" class="img-responsive" />
-                       <img width="560" height="315" src="images/salesforceinbox/salesforceinbox5.png" class="img-responsive" />
-                        <img width="560" height="315" src="images/salesforceinbox/salesforceinbox4.png" class="img-responsive" />
-                        <img width="560" height="315" src="images/salesforceinbox/salesforceinbox6.png" class="img-responsive" />
-                    </section>
-                </div>
-            </div>
-            <div class=clearfix></div>
-            <!-- <div class="grid work-images">
-                <ul class="effect-2 grid-lod" id=grid></ul>
-                <li><iframe allowfullscreen frameborder=0 height=720 src=//phamous2day.github.io/gAquarium/#/screens width=972 scrolling=no></iframe><iframe allowfullscreen frameborder=0 height=720 src=https://phamous2day.github.io/UXcapstone/#/screens width=972></iframe>
-            </div> -->
+  <main class=container role=main-inner-wrapper>
+    <div class=work-details>
+      <div class=row>
+        <div class="col-sm-12 col-xs-12 col-md-4">
+          <!-- <header role=work-title><h2>Dive Log</h2><a href=https://phamous2day.github.io/UXcapstone/#/screens>Try it out <i aria-hidden=true class="fa fa-external-link"></i></a></header> -->
         </div>
-    </main>
-    <footer role=footer>
-        <ul role=social-icons>
-            <li><a href=https://www.linkedin.com/in/phamdavid><i aria-hidden=true class="fa fa-linkedin"></i></a>
-            <li><a href=https://www.behance.net/phamous2day><i aria-hidden=true class="fa fa-behance"></i></a>
-            <li><a href=https://github.com/phamous2day><i aria-hidden=true class="fa fa-github"></i></a>
-            <li><a href=https://twitter.com/phamous2day><i aria-hidden=true class="fa fa-twitter"></i></a>
-        </ul>
-        <p class=copy-right>© 2023 David Pham
-    </footer>
-    <script src=js/jquery.min.js></script>
-    <script src=js/nav.js></script>
-    <script src=js/custom.js></script>
-    <script src=js/effects/masonry.pkgd.min.js></script>
-    <script src=js/effects/imagesloaded.js></script>
-    <script src=js/effects/classie.js></script>
-    <script src=js/effects/AnimOnScroll.js></script>
-    <script src=js/effects/modernizr.custom.js></script>
-    <script src=js/html5shiv.js></script>
+        <div class="col-xs-12 col-sm-12 col-md-8">
+          <section>
+            <h1>SALESFORCE INBOX</h1>
+            <p>Salesforce Inbox is a suite of mobile and desktop productivity apps that bring email, calendar, and Salesforce integration together to help sales reps sell smarter.</p>
+            <img width="560" height="315" src="images/salesforceinbox/salesforceinbox3.png" class="img-responsive" />
+            <p>Salesforce Inbox aims to be an integral tool to increase the productivity and efficiency of its users. The Inbox mobile app surfaces relevant Salesforce information in your email, providing a level of context of your customer interactions. It also offers a collection of productivity tools that help take care of the daily busy work that sales reps encounter.</p>
+            <h1>THE PROBLEM</h1>
+            <p>There's a lot of scheduling inefficiencies with the current feature such as having to fill out too many fields before being able to select an empty time slot. How might we save time on scheduling meetings and increase engagement with making more meetings?</p>
+            <img width="560" height="315" src="images/salesforceinbox/salesforceinbox.png" class="img-responsive" />
+            <h1>RESEARCH</h1>
+            <p>The first stage of the research process was to empathize with the customers. This involved building an understanding of their pain points, wants, and needs.</p>
+            <p>I dove into a 3-week research sprint where I did a lot of base research such as heuristics analysis, competitive and comparative analysis, along with 5+ user interviews.</p>
+            <p>From the interviews I learned that people wanted less clutter from the existing feature, they wanted the feature to use familiar design paradigms that didn’t feel foreign or clunky. The biggest insight was that the buffer times were married to the event type to reduce the amount of fields that needed to be filled out.</p>
+            <h1>DESIGN</h1>
+            <p>We were on a very tight deadline and developers needed to start building soon. Our initial pondering asked if we should design mobile first. Or if we needed to separate our features into phases? Or what design language we had to comply with because this feature lived on multiple email clients like Outlook and Gmail. </p>
+            <p> Once we answered the burning questions we dove into secondary research that involved usability tests with focus groups. The focus groups consisted of solution engineers, success architects, and support agents, etc. I teamed people who don’t normally work together into breakout rooms to try different scenarios to stress-test my prototype. </p>
+            <p> From the usability tests we learned learned a couple of insights that led to simplifying the scheduling experience. For example, people wanted less clutter and more ease of use by chunking together similar ideas. The biggest discovery was how buffer times were tied to event types instead of being separate … this way it’s less things to have to fill out each time. </p>
+            <img width="560" height="315" src="images/salesforceinbox/salesforceinbox7.png" class="img-responsive" />
+            <img width="560" height="315" src="images/salesforceinbox/salesforceinbox5.png" class="img-responsive" />
+            <img width="560" height="315" src="images/salesforceinbox/salesforceinbox4.png" class="img-responsive" />
+            <img width="560" height="315" src="images/salesforceinbox/salesforceinbox6.png" class="img-responsive" />
+          </section>
+        </div>
+      </div>
+      <div class=clearfix></div>
+      <!-- <div class="grid work-images"><ul class="effect-2 grid-lod" id=grid></ul><li><iframe allowfullscreen frameborder=0 height=720 src=//phamous2day.github.io/gAquarium/#/screens width=972 scrolling=no></iframe><iframe allowfullscreen frameborder=0 height=720 src=https://phamous2day.github.io/UXcapstone/#/screens width=972></iframe></div> -->
+    </div>
+  </main>
+  <footer role=footer>
+    <ul role=social-icons>
+      <li>
+        <a href=https://www.linkedin.com/in/phamdavid>
+          <i aria-hidden=true class="fa fa-linkedin"></i>
+        </a>
+      <li>
+        <a href=https://www.behance.net/phamous2day>
+          <i aria-hidden=true class="fa fa-behance"></i>
+        </a>
+      <li>
+        <a href=https://github.com/phamous2day>
+          <i aria-hidden=true class="fa fa-github"></i>
+        </a>
+      <li>
+        <a href=https://twitter.com/phamous2day>
+          <i aria-hidden=true class="fa fa-twitter"></i>
+        </a>
+    </ul>
+    <p class=copy-right>© 2023 David Pham
+  </footer>
+  <script src=js/jquery.min.js></script>
+  <script src=js/nav.js></script>
+  <script src=js/custom.js></script>
+  <script src=js/effects/masonry.pkgd.min.js></script>
+  <script src=js/effects/imagesloaded.js></script>
+  <script src=js/effects/classie.js></script>
+  <script src=js/effects/AnimOnScroll.js></script>
+  <script src=js/effects/modernizr.custom.js></script>
+  <script src=js/html5shiv.js></script>
